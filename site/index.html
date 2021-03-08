@@ -9,6 +9,7 @@
   <source src="bubbles.mp4" type="video/mp4">
 </video>
 <style>
+
         #myVideo {
   position: fixed;
   right: 0;
@@ -21,7 +22,7 @@
 .content {
   position: fixed;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
@@ -46,7 +47,16 @@
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px){
 	.content{
-		height: : 150%;
+		background-size:  : 150%;
+		font-size: 150%;
+	}
+}
+
+/********** Small devices only **********/
+@media (min-width: 320px) and (max-width: 991px){
+	.content{
+		background-size:  : 200%;
+		font-size: 200%;
 	}
 }
 
