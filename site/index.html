@@ -74,11 +74,11 @@
     </style>
     
 <div class="content">
-  <h1>Dobry wieczór!</h1>
-  <p>Coś się... coś się popsuło i nie było mnie słychać, to powtórzę jeszcze raz.
+  <h1>Enter number of requested Fibonacci's sequence elements</h1>
+  <p><input type="number" id="text_fibo" placeholder="Input here">
 </p>
   <!-- Use a button to pause/play the video with JavaScript -->
-  <button id="myBtn" onclick="myFunction()">Pause</button>
+  <button id="myBtn" onclick="fibo()">Submit</button>
 </div>
 <script>
 // Get the video
@@ -96,6 +96,11 @@ function myFunction() {
     video.pause();
     btn.innerHTML = "Play";
   }
+}
+function fibo() {
+
+  var str = document.getElementById("text_fibo").value;
+  alert("Value inside the text box is: "+str);
 }
 </script>
 
